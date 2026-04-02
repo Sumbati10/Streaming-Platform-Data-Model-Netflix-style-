@@ -17,13 +17,20 @@
 
 ## How to use (MySQL)
 
+### Option A: Import from MySQL CLI
+
 1. Create a database.
 2. Run the SQL in `schema.sql`.
-
-Example:
 
 ```sql
 CREATE DATABASE streaming_platform;
 USE streaming_platform;
 SOURCE schema.sql;
+```
+
+### Option B: One-line import
+
+```bash
+mysql -u <user> -p -e "CREATE DATABASE IF NOT EXISTS streaming_platform;" && \
+mysql -u <user> -p streaming_platform < schema.sql
 ```

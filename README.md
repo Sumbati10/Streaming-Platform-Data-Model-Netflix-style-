@@ -1,5 +1,9 @@
 # Streaming Platform Data Model (Netflix-style)
 
+## Screenshot
+
+![ERD Screenshot](assets/erd-screenshot.png)
+
 ## What is Data Modeling?
 
 Data modeling is the process of designing how information will be stored in a database.
